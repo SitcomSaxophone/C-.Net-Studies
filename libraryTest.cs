@@ -11,8 +11,8 @@ namespace StringLibraryTest
         public void TestStartsWithUpper()
         {
             // Test what we expect to return true
-            string[] words = {"Alphabet", "Zebra", "ABC", "Αθήνα", "Москва"};
-            foreach(var word in words) 
+            string[] words = { "Alphabet", "Zebra", "ABC", "Αθήνα", "Москва" };
+            foreach (var word in words)
             {
                 bool result = word.StartsWithUpper();
                 Assert.IsTrue(result,
@@ -22,11 +22,11 @@ namespace StringLibraryTest
         }
 
         [TestMethod]
-        public void TestDoesNotStartWithUpper() 
+        public void TestDoesNotStartWithUpper()
         {
             // Test what we expect to return false
-            string[] words = {"pelican", "desERT", "spoon", "1234", "."};
-            foreach(var word in words)
+            string[] words = { "pelican", "desERT", "spoon", "1234", "." };
+            foreach (var word in words)
             {
                 bool result = word.StartsWithUpper();
                 Assert.IsFalse(result,
@@ -39,8 +39,8 @@ namespace StringLibraryTest
         public void DirectCallWithNullOrEmpty()
         {
             // Test what we expect to return false
-            string[] words = {String.Empty, null};
-            foreach(var word in words)
+            string[] words = { String.Empty, null };
+            foreach (var word in words)
             {
                 bool result = StringLibrary.StartsWithUpper(word);
                 Assert.IsFalse(result,
