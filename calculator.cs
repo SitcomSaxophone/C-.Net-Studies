@@ -14,6 +14,7 @@ namespace BasicCalculator
             if (operation != "+" || operation != "-" || operation != "*" || operation != "/")
             {
                 Console.WriteLine("\nYou must enter a valid operator.");
+                Environment.Exit(0);
             }
             Console.WriteLine("\nPlease enter your second number!");
             int y = Console.Read();
