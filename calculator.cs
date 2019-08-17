@@ -10,15 +10,19 @@ namespace BasicCalculator
             Console.WriteLine("\nPlease enter you first number!");
             int x = Console.Read();
             Console.WriteLine("\nEnter your math operator.");
-            string operation = Console.ReadLine();
-            if (operation != "+" || operation != "-" || operation != "*" || operation != "/")
+            char operation = Console.ReadKey().KeyChar;
+            if (operation != '+' || operation != '-' || operation != '*' || operation != '/')
             {
                 Console.WriteLine("\nYou must enter a valid operator.");
                 Environment.Exit(0);
             }
-            Console.WriteLine("\nPlease enter your second number!");
-            int y = Console.Read();
-            float result;
+            else
+            {
+                Console.WriteLine("\nPlease enter your second number!");
+                int y = Console.Read();
+                double result;
+            }
+
         }
     }
 }
